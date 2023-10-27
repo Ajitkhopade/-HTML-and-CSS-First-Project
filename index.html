@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        background-image:url(Avengers.jpg);
+        background-size:cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .container{
+     
+     
+      margin-top: 150px;
+        height: auto;
+        width: 450px;
+        padding: 0px;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        border: 0.5px solid rgb(28, 185, 205);
+    }
+    .content{
+        margin: 20px;
+        padding: 5px;
+        display: grid;
+        gap: 15px;
+        align-items: center;
+        color: rgb(16, 184, 206);
+        
+    }
+    
+    .remember{
+        
+       
+        color:rgb(16, 184, 206);
+        display: flex;
+        justify-content: last baseline;
+    }
+    .member{
+        color:rgb(28, 185, 205);
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding-top: 30px;
+        
+    }
+   
+    a{
+        color: rgb(16, 184, 206);
+    }
+
+    .footer{
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .button{ 
+        
+        display: flex;
+        justify-content: center; 
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    button{
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+        color:rgb(16, 184, 206);
+        background-color: transparent;
+    }
+    input{
+        
+        background: transparent;
+        padding: 13px;
+        backdrop-filter: blur(20px);
+        border-bottom: 2px solid black;
+        border-radius: 3px;
+       
+    }
+    input:hover{
+        border: 1px solid black;
+        box-shadow: 6px 3px black;
+    }
+    button:hover{
+        border: 1px solid black;
+        box-shadow: 6px 3px black;
+    }
+    input[type=checkbox]:hover{
+        box-shadow: none;
+
+    }
+    
+
+    
+</style>
+<body>
+    <div class="container">
+
+        <div class="member">
+            <h1>Member Login</h1>
+        </div>
+
+        <div class="content">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username">
+    
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+    
+        </div>
+        
+        <div class="footer">
+            <div class="remember">
+                <input type="checkbox" id="check" >
+                <label for="check">Remember Me</label>
+            </div> 
+    
+            <div class="forgot">
+                <a href="Google.com">Forgot Password</a>
+            </div>
+        </div>
+       <div class="button"><button><strong><h2>Login</h2></strong></button>
+    </div>
+        
+    </div>
+</body>
+</html>
